@@ -1,1 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Clockwork Manor — Free Printable Logic Grids | Arthur Bramwell</title>
+  <meta name="description" content="Download free high-resolution printable 4x4 blank deduction grids for The Clockwork Manor (Vol. 1) by Arthur Bramwell. No sign-up required." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230F1D32'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23C99F4D' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23C99F4D'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --navy: #0f1d32;
+      --navy-deep: #091322;
+      --navy-card: #152640;
+      --cream: #f6f1e5;
+      --cream-soft: #ede5d3;
+      --brass: #c99f4d;
+      --brass-light: #e8d396;
+      --ink: #1a2332;
+      --muted: #4b5565;
+      --serif: Georgia, "Times New Roman", Times, serif;
+      --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
 
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--navy-deep);
+      color: var(--cream);
+      font-family: var(--sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(165deg, var(--navy-card) 0%, var(--navy) 100%);
+      border: 1.5px solid var(--brass);
+      outline: 1px solid rgba(201, 159, 77, 0.35);
+      outline-offset: -8px;
+      padding: 40px 26px 36px;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.38);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--brass-light);
+      margin-bottom: 14px;
+    }
+
+    .crest {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 14px;
+      display: block;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.85rem, 4.5vw, 2.75rem);
+      letter-spacing: 0.05em;
+      line-height: 1.15;
+      margin: 0 0 10px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-family: var(--serif);
+      font-size: clamp(1rem, 2.3vw, 1.2rem);
+      color: var(--brass-light);
+      margin: 0 0 8px;
+    }
+
+    .byline {
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(246, 241, 229, 0.8);
+      margin: 0 0 26px;
+    }
+
+    .rule {
+      width: 140px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--brass), transparent);
+      border: 0;
+      margin: 0 auto 24px;
+    }
+
+    .lead {
+      max-width: 620px;
+      margin: 0 auto 28px;
+      color: rgba(246, 241, 229, 0.92);
+      font-size: 0.98rem;
+    }
+
+    .download-box {
+      background: var(--cream);
+      color: var(--ink);
+      border: 2px solid var(--brass);
+      border-radius: 4px;
+      padding: 24px 20px;
+      max-width: 680px;
+      margin: 0 auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .download-box h2 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      margin: 0 0 6px;
+      color: var(--navy);
+    }
+
+    .specs {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 3px;
+      transition: transform 0.14s ease, filter 0.14s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.06);
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: var(--brass-light);
+      border: 1.5px solid var(--navy);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--navy);
+      border: 1.5px solid var(--navy);
+    }
+
+    .print-tip {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .section {
+      margin-top: 30px;
+      background: var(--navy);
+      border: 1px solid rgba(201, 159, 77, 0.35);
+      border-radius: 4px;
+      padding: 28px 24px;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      color: var(--brass-light);
+      margin: 0 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(201, 159, 77, 0.28);
+      letter-spacing: 0.03em;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(9, 19, 34, 0.55);
+      border: 1px solid rgba(201, 159, 77, 0.25);
+      border-radius: 4px;
+      padding: 18px;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy-deep);
+      background: var(--brass);
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      margin: 0 0 8px;
+      color: #ffffff;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: rgba(246, 241, 229, 0.85);
+    }
+
+    .roadmap-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .book-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--brass-light);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .book-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--brass-light);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: rgba(246, 241, 229, 0.65);
+    }
+
+    footer strong {
+      color: var(--brass-light);
+      font-weight: 600;
+    }
+
+    @media (max-width: 540px) {
+      .hero {
+        padding: 30px 16px 26px;
+        outline-offset: -6px;
+      }
+      .btn {
+        width: 100%;
+      }
+      .section {
+        padding: 22px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">The Horologist's Guild &bull; Official Companion Hub</span>
+
+      <svg class="crest" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="28" fill="none" stroke="#C99F4D" stroke-width="1.6" />
+        <circle cx="32" cy="32" r="22" fill="none" stroke="#E8D396" stroke-width="1" stroke-dasharray="3 3" />
+        <path d="M32 12v7M32 45v7M12 32h7M45 32h7M17.9 17.9l4.9 4.9M41.2 41.2l4.9 4.9M46.1 17.9l-4.9 4.9M22.8 41.2l-4.9 4.9" stroke="#C99F4D" stroke-width="2" stroke-linecap="round" />
+        <circle cx="32" cy="32" r="10" fill="none" stroke="#E8D396" stroke-width="2" />
+        <circle cx="32" cy="32" r="3.5" fill="#C99F4D" />
+      </svg>
+
+      <h1>THE CLOCKWORK MANOR</h1>
+      <p class="subtitle">75 Multi-Stage Mystery Logic Puzzles (Vol. 1)</p>
+      <p class="byline">By Arthur Bramwell</p>
+
+      <hr class="rule" />
+
+      <p class="lead">
+        Solving in ink, replaying favorite mysteries, or hosting a head-to-head puzzle night?
+        Download high-resolution blank 4&times;4 deduction grids directly below—no sign-up or email required.
+      </p>
+
+      <div class="download-box">
+        <h2>Free Printable 4&times;4 Blank Logic Grids</h2>
+        <p class="specs">US Letter (8.5 &times; 11 in) &bull; 2-Page PDF &bull; Standard &amp; 1-Lie Check Modes</p>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="./clockwork_free_blank_grids.pdf" download="Clockwork_Manor_Free_Blank_Grids.pdf">
+            Download Blank Grids (PDF)
+          </a>
+          <a class="btn btn-secondary" href="./clockwork_free_blank_grids.pdf" target="_blank" rel="noopener">
+            Open / Print in Browser
+          </a>
+        </div>
+
+        <p class="print-tip">
+          Printing Tip: Select <strong>Actual Size (100%)</strong> in Black &amp; White for crisp pencil-ready lines (use <em>Fit to Page</em> for A4 paper).
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">What's Inside the Printable Pack</h2>
+      <div class="grid-2">
+        <article class="card">
+          <span class="card-tag">Page 1</span>
+          <h3>Standard Deduction Sheet (Acts I &amp; II)</h3>
+          <p>
+            Spacious L-shaped 4&times;4 matrix (Time, Suspects, Locations, Items), Case Scratchpad,
+            4-Row Timeline Summary Table, Vault Lock tracker, and ruled Field Notes.
+          </p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Page 2</span>
+          <h3>1-Lie Check Edition (Acts III &amp; IV)</h3>
+          <p>
+            Full blank deduction matrix paired with a dedicated <strong>1-Lie Hypothesis Test</strong> panel
+            (<code>Assume A=T, B=F</code> vs. <code>Assume A=F, B=T</code>) for contradiction checks.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Deductive Integrity &amp; Series Roadmap</h2>
+      <div class="roadmap-list">
+        <article class="card">
+          <span class="book-pill">Available Now &bull; Vol. 1</span>
+          <h3>The Clockwork Manor</h3>
+          <p>
+            75 Z3-verified manor mysteries, chained 4-digit Vault Locks, 2-stage non-spoiler Hint Vault,
+            and the Case 75 Grand Cipher. (6 &times; 9 in, 280 pages).
+          </p>
+          <!-- Amazon公開後にURLを差し替え
+          <a class="book-link" href="https://www.amazon.com/dp/YOUR_ASIN" target="_blank" rel="noopener">View on Amazon &rarr;</a>
+          -->
+        </article>
+
+        <article class="card">
+          <span class="book-pill">Coming Next &bull; Vol. 2</span>
+          <h3>Murder on the Midnight Express</h3>
+          <p>
+            75 railway logic mysteries aboard the 1898 Victoria sleeper express featuring
+            Adjacent-Car spatial deduction and the Continental Cipher.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="book-pill">Upcoming &bull; Vol. 3</span>
+          <h3>Peril Aboard the SS Sovereign</h3>
+          <p>
+            75 ocean-liner mysteries across the North Atlantic with multi-deck alibi chains,
+            bridge logs, and maritime ciphers.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2026 <strong>Arthur Bramwell</strong> &bull; Published by <strong>Clockwork Mystery Press</strong><br />
+        Every mystery formally verified for a single, unique solution without guesswork.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
